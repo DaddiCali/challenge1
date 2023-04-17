@@ -5,18 +5,18 @@ challenge 1
         contract Chall1Metacrafters {
 
             uint myFavNum;
-            string myCompletename;
-            bool T/D = true;
-            address myCrypto;
+            string myCompleteName;
+            bool TD = true;
+            address myWallet;
 
-        function setMetacrafters(uint _Age, string memory _myFirstName, string memory _myLastName, address _EthAddress )public{
-                myFavNum = Age;
-                myCompleteName = myFirstName; myLastName;
+        function setMetacrafters(uint _Age, string memory _myFirstName, address _EthAddress )public{
+                myFavNum = _Age;
+                myCompleteName = _myFirstName;
                 myWallet = _EthAddress;
         }
 
         function getFavNum() public view returns (uint) {
-                 return myAge;
+                 return myFavNum;
         }
 
         function getCompleteName() public view returns (string memory) {
@@ -24,11 +24,11 @@ challenge 1
         }
 
         function getTest() public view returns (bool) {
-                 return T/D;
+                 return TD;
         }
 
         function getAddress() public view returns (address){
-                 return myCrypto;
+                 return myWallet;
         }
 
 } 
